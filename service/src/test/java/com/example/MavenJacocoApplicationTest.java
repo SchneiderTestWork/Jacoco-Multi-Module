@@ -1,10 +1,10 @@
-package com.example.mavenjacoco;
+package com.example;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MavenJacocoApplicationTests {
+class MavenJacocoApplicationTest {
 
     @Test
     void contextLoads() {
