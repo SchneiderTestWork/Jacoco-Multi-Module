@@ -48,6 +48,26 @@
     </dependencies>
 
     <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <!--                    <configuration>-->
+                    <!--                        <skip>true</skip>-->
+                    <!--                    </configuration>-->
+                    <configuration>
+                        <excludes>
+                            <exclude>
+                                <groupId>org.projectlombok</groupId>
+                                <artifactId>lombok</artifactId>
+                            </exclude>
+                        </excludes>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -55,14 +75,14 @@
                 <configuration>
                     <skip>true</skip>
                 </configuration>
-<!--                <configuration>-->
-<!--                    <excludes>-->
-<!--                        <exclude>-->
-<!--                            <groupId>org.projectlombok</groupId>-->
-<!--                            <artifactId>lombok</artifactId>-->
-<!--                        </exclude>-->
-<!--                    </excludes>-->
-<!--                </configuration>-->
+                <!--                <configuration>-->
+                <!--                    <excludes>-->
+                <!--                        <exclude>-->
+                <!--                            <groupId>org.projectlombok</groupId>-->
+                <!--                            <artifactId>lombok</artifactId>-->
+                <!--                        </exclude>-->
+                <!--                    </excludes>-->
+                <!--                </configuration>-->
             </plugin>
         </plugins>
     </build>
