@@ -8,7 +8,8 @@ class MavenJacocoApplicationTest {
 
     @Test
     void contextLoads() {
-        MavenJacocoApplication.main(new String[] {"one"});
+        var app = new MavenJacocoApplication();
+        app.main(new String[] {"one"});
     }
 
 }
